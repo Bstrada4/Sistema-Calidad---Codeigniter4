@@ -1,0 +1,76 @@
+.boxStadistics{
+    margin-bottom: 1.875rem;
+    background-color: #fff;
+    transition: all .5s ease-in-out;
+    position: relative;
+    border: 0px solid transparent;
+    border-radius: 1.75rem;
+    box-shadow: 0px 5px 5px 0px rgba(82, 63, 105, 0.05);
+    padding: 35px 30px 45px 30px;
+    opacity: 1;
+    padding-left: 130px;
+    
+}
+.boxStadistics.one{
+    background-color: #ffa755;
+}
+.boxStadistics.two{
+    background-color: #68e365;
+}
+.boxStadistics.three{
+    background-color: #b48dd3;
+}
+.boxStadistics.four{
+    background-color: #709fba;
+}
+/**/
+.boxStadistics::after {
+    content: "";
+    position: absolute;
+    height: 120px;
+    width: 120px;
+    transform: rotate(40deg);
+    top: -35px;
+    right: -35px;
+    border-radius: 1.75rem;
+    background: -moz-linear-gradient(left, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, .1) 100%);
+    background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, .1) 100%);
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, .1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#26ffffff', endColorstr='#00ffffff',GradientType=1 );
+}
+
+.boxStadistics .icon{
+    position: absolute;
+    left: 50px;
+    height: 60px;
+    width: 60px;
+    min-width: 60px;
+    line-height: 54px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.4);
+    text-align: center;
+    display: inline-block;
+    color: #ffffff;
+    font-size: 30px;
+}
+.boxStadistics h2{
+    color: #ffffff;
+    font-size: 45px;
+    font-weight: 600;
+}
+.boxStadistics h5{
+    color: #ffffff;
+    font-weight: 300;
+}
+/*****/
+.state{
+    font-size: 10px;
+    background: #36a2eb;
+    display: block;
+    padding: 2px;
+    text-align: center;
+    width: 80px;
+    color: #fff;
+    border: 3px solid #36a2eb;
+    border-radius: 8px;
+}

@@ -1,0 +1,167 @@
+.title_section{
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-flow: row wrap;
+    padding-bottom: 25px;
+    align-items: center;
+}
+/***/
+.title_section .flex_text{
+    width: calc(100% - 200px);
+}
+.title_section .flex_text h1{
+    font-size: 30px;
+    font-weight: 500;
+    color: #000;
+    text-transform: capitalize;
+}
+.title_section .flex_text ul{
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+.title_section .flex_text ul>li{
+    display: inline-block;
+}
+.title_section .flex_text ul>li.text{
+    font-size: 16px;
+    line-height: 1.5;
+    color: #c2c2c2;
+    font-weight: 400;
+}
+.title_section .flex_text ul>li.sepa{
+    font-size: 16px;
+    line-height: 1.5;
+    color: #6b6b6b;
+    font-weight: 400;
+}
+/***/
+.title_section .flex_select{
+    padding-right: 20px;
+    width: 200px;
+    text-align: right;
+}
+.title_section .flex_select>.dropdownB>a{
+    display: block;
+    font-size: 22px;
+    color: #386464;
+}
+/*****/
+.divDropdownB{
+    display: block;
+}
+.dropdownB{
+    position: relative;
+}
+.dropdownB ul{
+    position: absolute;
+    right: 0;
+    /*display: none;*/
+    min-width: 10rem;
+    padding: 0.5rem 0;
+    margin: 0;
+    font-size: 0.875rem;
+    color: #969ba0;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 0;
+    z-index: 2;
+    overflow: hidden;
+    border-radius: 1.75rem;
+    box-shadow: 0 0 50px 0 rgba(82, 63, 105, 0.15);
+}
+.dropdownB ul>li>a{
+    display: block;
+    width: 100%;
+    clear: both;
+    font-weight: 400;
+    text-align: inherit;
+    text-decoration: none;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+    font-size: 14px;
+    color: #969ba0;
+    padding: 0.5rem 1.75rem;
+}
+.dropdownB ul>li>a:hover, .dropdownB ul>li>a:focus {
+    color: #1e2125;
+    background-color: #e9ecef;
+}
+.dropdownB ul>li>a:active{
+    color: #fd7e14;
+    background: rgb(253 126 20 / 10%);
+}
+/**/
+/*.title_section .flex_select .dropdownB a:focus + ul,
+.title_section .flex_select .dropdownB ul:focus,
+.title_section .flex_select .dropdownB ul>li>a:focus{
+    display: block;
+}*/
+/*****/
+/** BTN ACTIONS TABLE **/
+.btnEdit{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background: #5bcfc5;
+    padding: 3px;
+    line-height: 19px;
+    text-align: center;
+    border-radius: 50%;
+    color: #ffffff;
+    border: 3px solid #5bcfc5;
+    -webkit-transition: .3s ease;
+    -moz-transition: .3s ease;
+    -o-transition: .3s ease;
+    -ms-transition: .3s ease;
+    transition: .3s ease;
+}
+.btnEdit:hover, .btnEdit:focus{
+    color: #ffffff;
+    box-shadow: 0 0 0 0.2rem rgb(103 255 242 / 48%);
+}
+/**/
+.btnDelete{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background: #5bcfc5;
+    padding: 3px;
+    line-height: 19px;
+    text-align: center;
+    border-radius: 50%;
+    color: #ffffff;
+    border: 3px solid #5bcfc5;
+    -webkit-transition: .3s ease;
+    -moz-transition: .3s ease;
+    -o-transition: .3s ease;
+    -ms-transition: .3s ease;
+    transition: .3s ease;
+}
+.btnDelete:hover, .btnDelete:focus{
+    color: #ffffff;
+    box-shadow: 0 0 0 0.2rem rgb(103 255 242 / 48%);
+}
+.flexActionInme{
+    display: flex;
+    flex-flow: row wrap;
+}
+.flexActionInme .item{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin: 0 10px;
+}
+.flexActionInme .item.green{
+    background: #98f000;
+}
+
+.flexActionInme .item.red{
+    background: #f05800;
+}

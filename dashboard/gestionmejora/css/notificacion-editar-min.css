@@ -1,0 +1,727 @@
+.title_section{
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-flow: row wrap;
+    padding-bottom: 25px;
+    align-items: center;
+}
+/***/
+.title_section .flex_text{
+    width: calc(100% - 200px);
+}
+.title_section .flex_text h1{
+    font-size: 30px;
+    font-weight: 500;
+    color: #000;
+    text-transform: capitalize;
+}
+.title_section .flex_text ul{
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+.title_section .flex_text ul>li{
+    display: inline-block;
+}
+.title_section .flex_text ul>li.text{
+    font-size: 16px;
+    line-height: 1.5;
+    color: #c2c2c2;
+    font-weight: 400;
+}
+.title_section .flex_text ul>li.sepa{
+    font-size: 16px;
+    line-height: 1.5;
+    color: #6b6b6b;
+    font-weight: 400;
+}
+/***/
+.title_section .flex_select{
+    padding-right: 20px;
+    width: 200px;
+    text-align: right;
+}
+.title_section .flex_select>.dropdownB>a{
+    display: block;
+    font-size: 22px;
+    color: #386464;
+}
+/*****/
+.divDropdownB{
+    display: block;
+}
+.dropdownB{
+    position: relative;
+}
+.dropdownB ul{
+    position: absolute;
+    right: 0;
+    /*display: none;*/
+    min-width: 10rem;
+    padding: 0.5rem 0;
+    margin: 0;
+    font-size: 0.875rem;
+    color: #969ba0;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 0;
+    z-index: 2;
+    overflow: hidden;
+    border-radius: 1.75rem;
+    box-shadow: 0 0 50px 0 rgba(82, 63, 105, 0.15);
+}
+.dropdownB ul>li>a{
+    display: block;
+    width: 100%;
+    clear: both;
+    font-weight: 400;
+    text-align: inherit;
+    text-decoration: none;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+    font-size: 14px;
+    color: #969ba0;
+    padding: 0.5rem 1.75rem;
+}
+.dropdownB ul>li>a:hover, .dropdownB ul>li>a:focus {
+    color: #1e2125;
+    background-color: #e9ecef;
+}
+.dropdownB ul>li>a:active{
+    color: #fd7e14;
+    background: rgb(253 126 20 / 10%);
+}
+/******/
+@media(max-width: 767px){
+    .title_section .flex_text h1 {
+        font-size: 22px;
+    }
+    .title_section .flex_select{
+        width: 100px;
+    }
+    .title_section .flex_text {
+        width: calc(100% - 100px);
+    }
+}
+/******/
+
+/******/
+.flex_top_table{
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/***** INPUT STYLE *****/
+.input_content{
+    margin-bottom: 20px;
+    border-radius: 10px;
+    padding: 10px;
+    -webkit-box-shadow: 0px 5px 20px 0px rgb(69 67 96 / 10%);
+    -moz-box-shadow: 0px 5px 20px 0px rgba(69, 67, 96, 0.1);
+    box-shadow: -1px 12px 20px 0px rgb(69 67 96 / 8%);
+}
+.input_content input{
+    display: block;
+    padding: 4px 8px;
+    width: 100%;
+    border: 0;
+}
+.input_content input:active, 
+.input_content input:focus{
+    outline: none;
+}
+/**/
+.input_content textarea{
+    display: block;
+    padding: 10px 20px;
+    width: 100%;
+    border: 0;
+    max-height: 350px;
+    min-height: 150px;
+}
+.input_content textarea:active, 
+.input_content textarea:focus{
+    outline: none;
+}
+
+/**/
+.input_content .dropdown{
+    padding: 0;
+}
+.input_content .btn{
+    background: #fff;
+    border: 0;
+}
+.input_content .show>.btn-light.dropdown-toggle{
+    background: transparent;
+}
+.input_content .btn:focus,
+.input_content .btn:active{
+    outline: none !important;
+    border: 0;
+    box-shadow: none !important;
+    background-color: transparent !important;
+}
+.input_content .bootstrap-select>.dropdown-toggle.bs-placeholder{
+    color: #1e2125;
+}
+/**/
+.input_content .fa-asterisk{
+    font-size: 8px;
+    color: #f00;
+    margin-bottom: 1px;
+}
+.input_content label{
+    font-weight: 700;
+}
+.input_content label svg:first-child{
+    color: #2d56cf;
+}
+.bs-searchbox .form-control:focus{
+    box-shadow: none;
+    border: 1px solid #ced4da;
+}
+.input_submit{
+    margin-top: 15px;
+}
+.input_submit .btn_ingresar button{
+    width: 100%;
+}
+/***** END INPUT STYLE *****/
+
+/***** INPUT FILE STYLE *****/
+.inputfile {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+.inputfile + label {
+    font-weight: 700;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+    display: block;
+    overflow: hidden;
+    padding: 0.625rem 1.25rem;
+    margin: 0;
+}
+.no-js .inputfile + label {
+    display: none;
+}
+
+.inputfile:focus + label,
+.inputfile.has-focus + label {
+    outline: none;
+}
+.inputfile + label svg {
+    width: 1em;
+    height: 1em;
+    vertical-align: middle;
+    fill: currentColor;
+    margin-top: -0.25em;
+    margin-right: 0.25em;
+}
+/* style 1 */
+.inputfile-1 + label {
+    color: #212529;
+}
+/*** END INPUT FILE STYLE ***/
+
+/******/
+.listFilesNotificador{
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+.listFilesNotificador>li{
+    margin-bottom: 10px;
+}
+.listFilesNotificador>li>a{
+    display: block;
+    border-radius: 20px;
+    border: 2px solid #093770;
+    color: #093770;
+    text-decoration: none;
+    padding: 10px;
+}
+.listFilesNotificador>li>a:hover{
+    background: #093770;
+    color: #ffffff;
+}
+/******/
+.boxProgress{
+    padding: 20px 0;
+}
+.boxProgress .progressMain{
+    position: relative;
+}
+.progressb {
+    --bg: tomato;
+    --width: 300px;
+    --strokeWidth: 8;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--bg);
+    font-size: calc(var(--width) / 5);
+    font-weight: bold;
+    width: var(--width);
+    height: var(--width);
+    visibility: hidden;
+    opacity: 0;
+    margin: 0 auto;
+}
+.progressb2 {
+    --bg2: #4799ff;
+    --width2: 230px;
+    --strokeWidth2: 20;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #4e4f72;
+    font-size: calc(var(--width2) / 5);
+    font-weight: bold;
+    width: var(--width2);
+    height: var(--width2);
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.progressb.active,
+.progressb2.active {
+    visibility: visible;
+    opacity: 1;
+}
+.progressb svg,
+.progressb2 svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.progressb .firstCircle{
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border: 8px solid #e6f6f5;
+    border-radius: 50%;
+}
+.progress__circle {
+    stroke-width: var(--strokeWidth);
+    stroke: var(--bg);
+    stroke-linecap: round;
+    fill: none;
+    transform: rotate(-90deg);
+    transform-origin: center;
+}
+.progress__circle2 {
+    stroke-width: var(--strokeWidth2);
+    stroke: var(--bg2);
+    stroke-linecap: round;
+    fill: none;
+    transform: rotate(-90deg);
+    transform-origin: center;
+}
+.progressb.inset {
+    --bg: #5cdda0;
+}
+.progressb.inset::before, .progressb.inset::after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    z-index: 1;
+}
+.progressb.inset::before {
+    top: -25px;
+    left: -25px;
+    width: calc(100% + 50px);
+    height: calc(100% + 50px);
+    box-shadow: inset 0 0 20px rgb(226 252 250 / 68%), 0 0 0 1px rgba(226, 252, 250, 0.6);
+}
+.progressb.inset::after {
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    width: calc(100% - var(--strokeWidth) * 2px - 50px);
+    height: calc(100% - var(--strokeWidth) * 2px - 50px);
+    box-shadow: 0 0 0 1px rgba(226, 252, 250, 0.6), inset 0 0 20px rgb(226 252 250 / 68%);
+}
+.progressb.inset .progress__circle {
+    /*stroke-linecap: inherit;*/
+}
+/****/
+.boxSide{
+    margin-top: 25px;
+}
+/**/
+.boxSide .boxHead h3{
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.boxSide .boxBody table .separate{
+    padding: 0 15px;
+}
+.boxSide .boxBody{
+    margin-top: 40px;
+}
+.btnSaveG{
+    display: block;
+    margin-top: 40px;
+    text-align: center;
+    font-weight: 700;
+    text-decoration: none;
+    color: #ffffff;
+    background: #093770;
+    padding: 15px 10px;
+    border-radius: 5px;
+    width: 100%;
+    border: 0;
+}
+.btnSaveG:hover,
+.btnSaveG:focus{
+    text-decoration: none;
+    color: #ffffff;
+    background: #4799ff;
+    text-decoration: none;
+    border: 0;
+    outline: none;
+}
+/**/
+#inputFile>label{
+    width: 100%;
+}
+#inputFile>label a{
+    display: block;
+    width: 100%;
+    background: #f5f8fd;
+    border-color: #ffffff;
+    color: #888888 !important;
+    font-weight: 500;
+    cursor: pointer;
+}
+#files-area {
+    width: 100%;
+    margin: 0 auto;
+}
+.file-block {
+    border-radius: 10px;
+    background-color: rgb(248 185 41);
+    margin: 5px;
+    color: #ffffff;
+    display: inline-flex;
+}
+.file-block > span.name {
+    padding-right: 10px;
+    width: max-content;
+    display: inline-flex;
+    line-height: 2;
+}
+  
+.file-delete {
+    display: flex;
+    width: 24px;
+    color: #ffffff;
+    background-color: #e5a40f;
+    font-size: large;
+    justify-content: center;
+    margin-right: 3px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.file-delete:hover {
+    background-color: rgba(144, 163, 203, 0.2);
+}
+.file-delete > span {
+    transform: rotate(45deg);
+}
+#files-names{
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-flow: row wrap;
+}
+.file-delete a{
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+}
+.file-block>a{
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+    padding-top: 4px;
+    padding-right: 5px;
+}
+.file-block>a:hover{
+    text-decoration: underline;
+}
+/**/
+/***/
+.contentRadio .switch {
+    position: absolute;
+    top: 16px;
+    right: 0;
+    width: 150px;
+    height: 50px;
+    text-align: center;
+    margin: -30px 0 0 -75px;
+    background: #093770;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    border-radius: 25px;
+}
+.contentRadio .switch span {
+    position: absolute;
+    width: 20px;
+    height: 4px;
+    top: 50%;
+    left: 50%;
+    margin: -2px 0px 0px -4px;
+    background: #fff;
+    display: block;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    border-radius: 2px;
+}
+.contentRadio .switch span:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 4px;
+    height: 12px;
+    margin-top: -8px;
+    background: #fff;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    border-radius: 2px;
+}
+.contentRadio input[type=radio] {
+    display: none;
+}
+.contentRadio .switch label {
+    cursor: pointer;
+    color: rgba(0,0,0,0.3);
+    width: 60px;
+    line-height: 50px;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+  }
+.contentRadio label[for=yes],
+.contentRadio label[for=yes2] {
+    position: absolute;
+    left: 0px;
+    height: 20px;
+}
+.contentRadio label[for=no],
+.contentRadio label[for=no2] {
+    position: absolute;
+    right: 0px;
+}
+.contentRadio #no:checked ~ .switch,
+.contentRadio #no2:checked ~ .switch {
+    background: #ff3b30;
+}
+.contentRadio #no:checked ~ .switch span,
+.contentRadio #no2:checked ~ .switch span {
+    background: #fff;
+    margin-left: -8px;
+}
+.contentRadio #no:checked ~ .switch span:after,
+.contentRadio #no2:checked ~ .switch span:after {
+    background: #fff;
+    height: 20px;
+    margin-top: -8px;
+    margin-left: 8px;
+}
+.contentRadio #yes:checked ~ .switch label[for=yes],
+.contentRadio #yes2:checked ~ .switch label[for=yes2] {
+    color: #fff;
+}
+.contentRadio #no:checked ~ .switch label[for=no],
+.contentRadio #no2:checked ~ .switch label[for=no2] {
+    color: #fff;
+}  
+/***/
+/*** ACCIÓN INMEDIATA ***/
+.btnsActionInme{
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-flow: row wrap;
+    flex-direction: column;
+}
+.btnsActionInme .btnSave,
+.btnsActionInme .btnSaveEdit{
+    display: block;
+    width: 35px;
+    height: 35px;
+    background: #feb935;
+    color: #ffffff;
+    margin: 0 auto;
+    line-height: 35px;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    border: 3px solid #feb935;
+}
+.btnsActionInme .btnSave:hover,
+.btnsActionInme .btnSaveEdit:focus,
+.btnsActionInme .btnSave:hover,
+.btnsActionInme .btnSaveEdit:focus{
+    border-color: #ffe0a5;
+}
+.btnsActionInme .btnDelete,
+.btnsActionInme .btnDeleteEdit{
+    display: block;
+    width: 35px;
+    height: 35px;
+    background: #f36152;
+    color: #ffffff;
+    margin: 0 auto;
+    line-height: 35px;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 50%;
+    border: 3px solid #f36152;
+}
+.btnsActionInme .btnDelete:hover,
+.btnsActionInme .btnDelete:focus,
+.btnsActionInme .btnDeleteEdit:hover,
+.btnsActionInme .btnDeleteEdit:focus{
+    border-color: #ffb8b1;
+}
+.btnsActionInme .btnDownEdit{
+    display: block;
+    width: 35px;
+    height: 35px;
+    background: #00b3ff;
+    color: #ffffff;
+    margin: 0 auto;
+    line-height: 35px;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    border: 3px solid #00b3ff;
+}
+.btnsActionInme .btnDown:hover,
+.btnsActionInme .btnDownEdit:focus,
+.btnsActionInme .btnDown:hover,
+.btnsActionInme .btnDownEdit:focus{
+    border-color: #6bd1fd;
+}
+/****/
+.btnAddAction{
+    display: block;
+    width: 300px;
+    /* height: 55px; */
+    background: #feb935;
+    color: #ffffff;
+    line-height: 55px;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 5px;
+    border: 3px solid #feb935;
+    text-decoration: none;
+}
+.btnAddAction:hover{
+    text-decoration: none;
+    color: #ffffff;
+    border-color: #ffe0a5;
+}
+/*******/
+.btnDeleteFile{
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    width: 25px;
+    height: 25px;
+    background: #f54821;
+    color: #ffffff;
+    line-height: 25px;
+    text-align: center;
+    font-size: 15px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    border: 3px solid #f54821;
+    cursor: pointer;
+}
+.btnDeleteFile:hover{
+    color: #ffffff;
+}
+/*******/
+@media(max-width: 1280px){
+    .progressb {
+        --width: 250px;
+        --height: 250px;
+    }
+    .progressb2 {
+        --width2: 180px;
+        --height2: 180px;
+    }
+}
+@media(max-width: 1199px){
+    .progressb {
+        --width: 220px;
+        --height: 220px;
+    }
+    .progressb2 {
+        --width2: 150px;
+        --height2: 150px;
+    }
+    .boxSide .boxHead h3 {
+        font-size: 20px;
+    }
+    .boxSide table tr th,
+    .boxSide table tr td{
+        font-size: 12px;
+    }
+    .input_content label {
+        font-size: 12px;
+    }
+}

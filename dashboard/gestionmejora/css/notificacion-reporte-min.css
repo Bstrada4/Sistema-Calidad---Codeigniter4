@@ -1,0 +1,218 @@
+.title_section{
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-flow: row wrap;
+    padding-bottom: 25px;
+    align-items: center;
+}
+/***/
+.title_section .flex_text{
+    width: calc(100% - 200px);
+}
+.title_section .flex_text h1{
+    font-size: 30px;
+    font-weight: 500;
+    color: #000;
+    text-transform: capitalize;
+}
+.title_section .flex_text ul{
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+.title_section .flex_text ul>li{
+    display: inline-block;
+}
+.title_section .flex_text ul>li.text{
+    font-size: 16px;
+    line-height: 1.5;
+    color: #c2c2c2;
+    font-weight: 400;
+}
+.title_section .flex_text ul>li.sepa{
+    font-size: 16px;
+    line-height: 1.5;
+    color: #6b6b6b;
+    font-weight: 400;
+}
+/***/
+.title_section .flex_select{
+    padding-right: 20px;
+    width: 200px;
+    text-align: right;
+}
+.title_section .flex_select>.dropdownB>a{
+    display: block;
+    font-size: 22px;
+    color: #386464;
+}
+/*****/
+.divDropdownB{
+    display: block;
+}
+.dropdownB{
+    position: relative;
+}
+.dropdownB ul{
+    position: absolute;
+    right: 0;
+    /*display: none;*/
+    min-width: 10rem;
+    padding: 0.5rem 0;
+    margin: 0;
+    font-size: 0.875rem;
+    color: #969ba0;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 0;
+    z-index: 2;
+    overflow: hidden;
+    border-radius: 1.75rem;
+    box-shadow: 0 0 50px 0 rgba(82, 63, 105, 0.15);
+}
+.dropdownB ul>li>a{
+    display: block;
+    width: 100%;
+    clear: both;
+    font-weight: 400;
+    text-align: inherit;
+    text-decoration: none;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+    font-size: 14px;
+    color: #969ba0;
+    padding: 0.5rem 1.75rem;
+}
+.dropdownB ul>li>a:hover, .dropdownB ul>li>a:focus {
+    color: #1e2125;
+    background-color: #e9ecef;
+}
+.dropdownB ul>li>a:active{
+    color: #fd7e14;
+    background: rgb(253 126 20 / 10%);
+}
+/******/
+@media(max-width: 767px){
+    .title_section .flex_text h1 {
+        font-size: 22px;
+    }
+    .title_section .flex_select{
+        width: 100px;
+    }
+    .title_section .flex_text {
+        width: calc(100% - 100px);
+    }
+}
+/******/
+
+/***** INPUT STYLE *****/
+.boxTitle{
+    display: flex;
+    height: 100%;
+    background: #093770;
+    color: #ffffff;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+}
+/***/
+.input_content{
+    margin-bottom: 20px;
+    border-radius: 10px;
+    padding: 10px;
+    -webkit-box-shadow: 0px 5px 20px 0px rgb(69 67 96 / 10%);
+    -moz-box-shadow: 0px 5px 20px 0px rgba(69, 67, 96, 0.1);
+    box-shadow: -1px 12px 20px 0px rgb(69 67 96 / 8%);
+}
+.input_content input{
+    display: block;
+    padding: 4px 8px;
+    width: 100%;
+    border: 0;
+}
+.input_content input:active, 
+.input_content input:focus{
+    outline: none;
+}
+/**/
+.input_content textarea{
+    display: block;
+    padding: 10px 20px;
+    width: 100%;
+    border: 0;
+    max-height: 350px;
+    min-height: 150px;
+}
+.input_content textarea:active, 
+.input_content textarea:focus{
+    outline: none;
+}
+
+/**/
+.input_content .dropdown{
+    padding: 0;
+}
+.input_content .btn{
+    background: #fff;
+    border: 0;
+}
+.input_content .show>.btn-light.dropdown-toggle{
+    background: transparent;
+}
+.input_content .btn:focus,
+.input_content .btn:active{
+    outline: none !important;
+    border: 0;
+    box-shadow: none !important;
+    background-color: transparent !important;
+}
+.input_content .bootstrap-select>.dropdown-toggle.bs-placeholder{
+    color: #1e2125;
+}
+/**/
+.input_content .fa-asterisk{
+    font-size: 8px;
+    color: #f00;
+    margin-bottom: 1px;
+}
+.input_content label{
+    font-weight: 700;
+}
+.input_content label svg:first-child{
+    color: #2d56cf;
+}
+.bs-searchbox .form-control:focus{
+    box-shadow: none;
+    border: 1px solid #ced4da;
+}
+.input_submit{
+    margin-top: 15px;
+}
+.input_submit .btn_ingresar button{
+    width: 100%;
+}
+/****/
+.btnGenerar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.btnGenerar button{
+    display: block;
+    border: 0;
+    border-radius: 10px;
+    background: #093770;
+    color: #ffffff;
+    font-weight: 700;
+    outline: none;
+    padding: 12px;
+    transition: all ease .3s;
+}
+/***** END INPUT STYLE *****/
